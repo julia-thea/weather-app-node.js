@@ -4,7 +4,7 @@ const url = 'http://api.weatherstack.com/current?access_key=7db4a9628da1809e8f22
 
 request({ url: url, json: true }, (error, response) => {
   if (error) {
-    consople.log('Unable to connect to weather service')
+    console.log('Unable to connect to weather service')
   } else {
     console.log(`It is currently ${response.body.current.temperature} degrees out. It is ${String(response.body.current.weather_descriptions).toLowerCase()}`)
   }
