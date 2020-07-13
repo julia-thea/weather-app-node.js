@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JuliaTe/weather-app-node.js/issues"
   },
-  "homepage": "https://github.com/JuliaTe/weather-app-node.js#readme"
+  "homepage": "https://github.com/JuliaTe/weather-app-node.js#readme",
+  "dependencies": {
+    "postman-request": "^2.88.1-postman.23"
+  }
 }
