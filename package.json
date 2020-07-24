@@ -1,0 +1,19 @@
+{
+  "name": "weather-app-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaTe/weather-app-node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaTe/weather-app-node.js/issues"
+  },
+  "homepage": "https://github.com/JuliaTe/weather-app-node.js#readme"
+}
