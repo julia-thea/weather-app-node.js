@@ -9,7 +9,7 @@ const forecast = (address, callback) => {
       callback('Unable to display weather stats for chosen location. Try something else', undefined)
     } else {
       callback(undefined, {
-        weather: response.body.current.temperature
+        weather: `Weather for ${response.body.location.name} is ${response.body.current.temperature}`
       })
     }
   })
