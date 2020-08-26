@@ -48,7 +48,7 @@ app.get('/weather', (req, res) => {
     })
   }
   if (req.query.address) {
-    geocode(req.query.address, (error, { location }) => {
+    geocode(req.query.address, (error, { location } = {}) => { // Providing default value (object)
       if(error) {
         return res.send({error})
       } 
