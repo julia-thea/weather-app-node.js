@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const { send } = require('process')
 
 // Define paths for Express config
 const app = express()
@@ -39,8 +40,26 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
+  if (!req.query.address) {
+    return res.send({
+      error: 'Please provide an address'
+    })
+  }
   res.send({
-    forecast: 'It is snowing'
+    forecast: 'It is snowing',
+    location: 'Minsk',
+    address: req.query.address
+  })
+})
+
+app.get('/products', (req, res) => {
+  if (!req.query.search) {
+    return res.send({
+      error: 'Provide a search term'
+    })
+  }
+  res.send({
+    products: []
   })
 })
 
